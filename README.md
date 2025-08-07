@@ -37,7 +37,7 @@ Every screenshot should have some text explaining what the screenshot is about.
 
 Example below.
 
-*Ref 1: Network Diagram*
+*Ref 1: WebStrike.PCAP file
 
 ## Notes:
 
