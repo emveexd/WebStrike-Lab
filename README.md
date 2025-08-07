@@ -6,12 +6,12 @@ Task is to analyze the provided PCAP file to uncover how the file appeared and d
 
 ### Skills Learned
 
-- Identifying the geographical origin of the attack facilitates the implementation of geo-blocking measures and the analysis of threat intelligence. From which city did the attack originate?
-- Knowing the attacker's User-Agent assists in creating robust filtering rules. What's the attacker's Full User-Agent?
-- We need to determine if any vulnerabilities were exploited. What is the name of the malicious web shell that was successfully uploaded?
-- Identifying the directory where uploaded files are stored is crucial for locating the vulnerable page and removing any malicious files. Which directory is used by the website to store the uploaded files?
-- Which port, opened on the attacker's machine, was targeted by the malicious web shell for establishing unauthorized outbound communication?
-- Recognizing the significance of compromised data helps prioritize incident response actions. Which file was the attacker attempting to exfiltrate?
+1. Identifying the geographical origin of the attack facilitates the implementation of geo-blocking measures and the analysis of threat intelligence. From which city did the attack originate?
+2. Knowing the attacker's User-Agent assists in creating robust filtering rules. What's the attacker's Full User-Agent?
+3. We need to determine if any vulnerabilities were exploited. What is the name of the malicious web shell that was successfully uploaded?
+4. Identifying the directory where uploaded files are stored is crucial for locating the vulnerable page and removing any malicious files. Which directory is used by the website to store the uploaded files?
+5. Which port, opened on the attacker's machine, was targeted by the malicious web shell for establishing unauthorized outbound communication?
+6. Recognizing the significance of compromised data helps prioritize incident response actions. Which file was the attacker attempting to exfiltrate?
 
 ### Tools Used
 
