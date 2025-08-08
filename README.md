@@ -20,7 +20,8 @@ Task is to analyze the provided PCAP file to uncover how the file appeared and d
 
 ## Steps:
 
-1. Navigate to the WebStrike.PCAP file that was captured.  <a href="https://github.com/emveexd/WebStrike-Lab"> *Ref 1: WebStrike.PCAP file </a>
+### Ref 1: WebStrike.PCAP file
+1. Navigate to the WebStrike.PCAP file that was captured ---| *Ref 1: WebStrike.PCAP file |.
 2. Perform an IPv4 Address Lookup of ---| 117.11.88.124 |. 
 3. Identify the User-Agent ---| Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0 |.
 4. Create a filter for Wireshark ---| (ip.src == 117.11.88.124 and http.request.method=="POST") |.
